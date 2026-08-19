@@ -213,6 +213,30 @@
   }
   .tank-total b{display:block;font-size:22px;color:var(--ink);font-weight:600;margin-top:2px;}
 
+  /* MOBILE: hero & general layout */
+  @media (max-width:680px){
+    section{padding:72px 20px;}
+    .hero{
+      min-height:auto;
+      flex-direction:column;
+      align-items:stretch;
+      text-align:center;
+      padding-top:96px;
+      padding-bottom:56px;
+      gap:36px;
+    }
+    .hero-text{order:2;}
+    .hero-visual{order:1;min-width:0;}
+    .eyebrow{justify-content:center;}
+    .hero h1{font-size:clamp(26px,7vw,34px);line-height:1.4;}
+    .hero p{margin-left:auto;margin-right:auto;font-size:15px;}
+    .hero-cta{width:100%;justify-content:center;margin-top:28px;}
+    .tank-wrap{width:104px;}
+    .tank{width:104px;height:186px;}
+    .tank-total{font-size:11.5px;}
+    .tank-total b{font-size:18px;}
+  }
+
   /* SECTIONS */
   .kicker{
     font-family:"IBM Plex Mono",monospace;
